@@ -6,7 +6,13 @@
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
+
+ 
 }
+
+/* *{
+  border: solid black 1px;
+} */
 
 @media (prefers-color-scheme: dark) {
   :root {
@@ -24,4 +30,66 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+}
+
+.bgmain {
+  background: rgb(246, 245, 233);
+  background: linear-gradient(
+    0deg,
+    rgb(255, 255, 255) 0%,
+    rgba(205, 252, 252, 0.3) 60%,
+    rgba(255, 255, 255, 0.568) 100%
+  );
+}
+
+.bgcircle1 {
+  background: rgba(250, 211, 237,.2);
+  background: radial-gradient(
+    rgb(250, 223, 187) 0%,
+    rgba(250, 223, 187, 0.5) 30%,
+    rgba(250, 223, 187, 0.015) 60%,
+    rgba(255, 255, 255, 0) 100%
+  );
+}
+
+@layer utilities {
+  .no-scrollbar::-webkit-scrollbar {
+      display: none;
+  }
+
+  .no-scrollbar {
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+  }
+}
+
+@layer components {
+  .nav-item {
+    @apply relative hover:text-orange-400 text-black transition-all duration-300 cursor-pointer  font-light;
+  }
+}
+
+.glass-logo {
+  background: rgba(255, 255, 255, 0.05);
+  box-shadow: 0 8px 32px 0 rgba(135, 107, 31, 0.11);
+  backdrop-filter: blur(1.5px);
+  -webkit-backdrop-filter: blur(1.5px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.glass-header{
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.glass-theme {
+  background: rgba(255, 255, 255, 0.658);
+  backdrop-filter: blur(1.5px);
+  -webkit-backdrop-filter: blur(1.5px);
+  border-radius: 100%;
+  border: 1px solid rgba(250, 217, 174, 0.39);
 }
