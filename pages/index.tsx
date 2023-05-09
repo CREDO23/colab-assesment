@@ -14,7 +14,6 @@ export default function Home() {
 
   return (
     <div className=" relative w-screen overflow-auto no-scrollbar h-screen bgmain">
-      {/* <div className=" -z-20 absolute top-0 left-0 w-full h-screen border border-[rgba(255,255,255,.2)] rounded-xl  bg-gray-400 backdrop-filter backdrop backdrop-blur-lg bg-clip-padding bg-opacity-10"></div> */}
       <div className="bgcircle1 max-[500px]:-left-[20rem] absolute -top-[10rem] -left-[10rem] w-[40rem] h-[40rem] rounded-full"></div>
       <Header hamburger={hamburger} setHamburger={setHamburger} />
       <main
