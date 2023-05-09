@@ -3,6 +3,7 @@ import Header from "@/components/layouts/Header";
 import Footer from "@/components/layouts/Footer";
 import { useState } from "react";
 import Home1 from "@/components/main/Home";
+import About from "@/components/main/About";
 
 const poppins = Poppins({
   weight: ["100", "200", "300", "400", "500", "600", "700"],
@@ -24,6 +25,7 @@ export default function Home() {
         }`}
       >
         <Home1 />
+        <About/>
       </main>
       <Footer hamburger={hamburger} />
     </div>
