@@ -22,7 +22,7 @@ export default function ToggleTheme(): JSX.Element {
       onClick={() => setOpen(!open)}
       className={` overflow-hidden space-x-2 border border-slate-200 w-[40px] ${
         open ? "w-[90px]" : ""
-      }  transition-all duration-500 h-[2.5rem]  rounded-3xl`}
+      }  transition-all duration-500 h-[2.5rem] text-pink  rounded-3xl`}
     >
       {themes.map((theme: Itheme, index: number) => {
         if (index == currenttheme) {

@@ -17,7 +17,8 @@ module.exports = {
         'yellow-200' : 'rgba(250, 217, 174, 0.849)',
         'blue' : '#6E97FF',
         'green' : '#45DFCD',
-        'pink' : '#FF6DCD'
+        'pink' : '#FF6DCD',
+        'pink-20' : '#ff45be'
       }
     },
   },

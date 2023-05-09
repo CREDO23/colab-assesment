@@ -10,6 +10,11 @@ export default function Navigation(): JSX.Element {
       link: "#",
     },
     {
+      index: 1,
+      label: "About me",
+      link: "#",
+    },
+    {
       index: 2,
       label: "My projects",
       link: "#",
