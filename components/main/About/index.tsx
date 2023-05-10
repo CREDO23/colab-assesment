@@ -3,6 +3,13 @@ export default function About(): JSX.Element {
     <section className="w-full my-6 flex items-center flex-col gap-10">
       <h3 className=" text-2xl">About me</h3>
       <div className=" font-light flex flex-col gap-4 items-center justify-center text-center">
+        <p className="w-[30rem] max-[550px]:w-[22rem] ">
+          Since beginning my journey as a Web developper , I&apos;ve done remote
+          work for agencies , consulted for statups , and collaborate with
+          talend people to create digital products for both business and
+          consumer use . I’m quietly confident , naturally curious , and
+          perpetually working on improving my chops and problem solving .
+        </p>
         <p className=" max-[550px]:w-[21rem] w-[25rem]">
           My passions are Computer Science, problem-solving, science and
           Technology. I spend my free time in reading books or listing musics
@@ -64,21 +71,6 @@ export default function About(): JSX.Element {
             <li>Figma / Canva / Visily</li>
           </ul>
         </div>
-      </div>
-      <div className=" font-light flex flex-col gap-4 items-center justify-center text-center">
-        <p className="max-[550px]:w-[21rem]  w-[25rem]">
-          I am currently looking for remote opportunities and challenges, I
-          enjoy discussing with other people around the world.
-        </p>
-        <p className="w-[30rem] max-[550px]:w-[22rem] ">
-          Feel free to connect if you&apos;d like, or you can contact me by
-          emailing me directly at{" "}
-          <span className=" text-pink">bakeratheirry@gmail.com</span>.<br />
-          My open-source projects :{" "}
-          <a className=" text-pink" href="https://github.com/CREDO23">
-            Github
-          </a>
-        </p>
       </div>
     </section>
   );

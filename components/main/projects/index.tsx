@@ -1,15 +1,54 @@
-import Image from "next/image";
 import chataw from "../../../public/projects_images/chataw.png";
+import Card from "./Card";
+import quizapp from "../../../public/projects_images/quizapp.png";
+import rillby from "../../../public/projects_images/rillby.png";
+import spes from "../../../public/projects_images/spes.png";
+
+const datav: IprojectCard[] = [
+  {
+    title: "Chataw",
+    image: chataw,
+    description:
+      "A Real Time Chat App that allows people to discuss either on a private chat or a channel chat.",
+    link: "https://chataw.vercel.app/home",
+  },
+  {
+    title: "QuizApp",
+    image: quizapp,
+    description:
+      "A quizapp that the user is supposed to respond to a series of questions about Javascript language.",
+    link: "https://credo23.github.io/QuizApp/",
+  },
+  {
+    title: "Rillby",
+    image: rillby,
+    description:
+      "A streaming web site that consume the spotify API , its allow you to listen and have access to your spotify playlist and songs.",
+    link: "https://streamingcr.netlify.app/",
+  },
+  {
+    title: "Spes",
+    image: spes,
+    description:
+      "A Quick Book app , its allow you to keep track your financials functions like incomes , expenses and can generate a repport.",
+    link: "https://spes-sigma.vercel.app/",
+  },
+];
 
 export default function Projects(): JSX.Element {
   return (
-    <section className="w-full my-6 flex items-center flex-col gap-10">
+    <section className="w-full my-6 flex items-center flex-col gap-14">
       <h3 className=" text-2xl">My Recents projects</h3>
-      <div className=" w-full">
-        <div className=" w-[18rem] flex flex-col gap-4 p-4 h-[25rem] glass-project">
-          <h4 className="">Chataw</h4>
-          <Image className=" rounded-2xl" src={chataw} alt="chataw" />
-        </div>
+      <div className=" flex flex-wrap items-center justify-center gap-12 w-full">
+        {datav.map((item, key) => (
+          <Card
+            key={key}
+            title={item.title}
+            description={item.description}
+            image={item.image}
+            link={item.link}
+          />
+        ))}
       </div>
     </section>
   );
