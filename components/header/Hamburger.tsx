@@ -1,13 +1,10 @@
-import { Dispatch, SetStateAction } from "react";
-
-interface Iprops {
-  setToggle: Dispatch<SetStateAction<boolean>>;
-  toggle: boolean;
-}
-export default function Hamburger({ setToggle, toggle }: Iprops): JSX.Element {
+export default function Hamburger({
+  setHamburger,
+  hamburger,
+}: IhamburgerProps): JSX.Element {
   return (
     <div
-      onClick={() => setToggle(!toggle)}
+      onClick={() => setHamburger(!hamburger)}
       className="md:hidden absolute top-[26px] -right-[5px] flex-col items-center h-12 w-12 space-y-2"
     >
       <span className="block w-5 h-[1px] bg-black"></span>

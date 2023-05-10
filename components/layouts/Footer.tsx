@@ -1,10 +1,9 @@
 import Logo from "../header/Logo";
+import menus from "../../data/menus";
+import SocialMediaItem from "../footer/socialMedia/Item";
+import socialmedias from "@/data/socialmedias";
 
-interface Iprops {
-  hamburger: boolean;
-}
-
-export default function Footer({ hamburger }: Iprops): JSX.Element {
+export default function Footer({ hamburger }: IhamburgerProps): JSX.Element {
   return (
     <footer
       className={` ${
@@ -17,18 +16,24 @@ export default function Footer({ hamburger }: Iprops): JSX.Element {
             <Logo />
           </span>
           <ul className="flex items-center justify-center flex-col md:flex-row max-[770px]:gap-4 gap-8 ">
-            <li className="nav-item">
-              <a href="#">Home</a>
-            </li>
-            <li className="nav-item">
-              <a href="#">About me</a>
-            </li>
-            <li className="nav-item">
-              <a href="#">My projects</a>
-            </li>
-            <li className="nav-item">
-              <a href="#">Inspiration</a>
-            </li>
+            {menus.map((item: InavigationMenu, key) => (
+              <li key={key} className="nav-item">
+                <a href={item.link}>{item.label}</a>
+              </li>
+            ))}
+          </ul>
+          <ul className="flex  items-center justify-center flex-col md:flex-row max-[770px]:gap-4 gap-8 ">
+            {socialmedias.map((item, key) => {
+              return (
+                <li key={key}>
+                  <SocialMediaItem
+                    link={item.link}
+                    icon={item.icon({ size: "1x" })}
+                    label={item.label}
+                  />
+                </li>
+              );
+            })}
           </ul>
         </div>
         <hr className="my-8 w-11/12" />

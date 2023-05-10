@@ -2,12 +2,6 @@ import React, { ReactNode, useState } from "react";
 import { IoIosMoon } from "react-icons/io";
 import { WiDaySunny } from "react-icons/wi";
 
-interface Itheme {
-  index: number;
-  label: string;
-  icon: ReactNode;
-}
-
 export default function ToggleTheme(): JSX.Element {
   const [currenttheme, setCurrentTheme] = useState(1);
   const [open, setOpen] = useState<boolean>(false);

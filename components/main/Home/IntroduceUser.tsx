@@ -1,6 +1,4 @@
-import Button from "@/components/Button";
-
-import {} from "react-icons";
+import Button from "@/components/shared/Button";
 
 export default function IntroduceUser(): JSX.Element {
   return (

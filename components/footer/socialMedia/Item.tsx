@@ -1,0 +1,14 @@
+export default function SocialMediaItem({
+  icon,
+  label,
+  link,
+}: IsocialmediaProps): JSX.Element {
+  return (
+    <a href={link} className="flex items-center justify-center gap-1">
+      <span className="text-yellow h-6 w-6 flex items-center justify-center">
+        {icon}
+      </span>
+      <p className=" font-light text-sm">{label}</p>
+    </a>
+  );
+}

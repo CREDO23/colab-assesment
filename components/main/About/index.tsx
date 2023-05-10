@@ -7,7 +7,7 @@ export default function About(): JSX.Element {
           Since beginning my journey as a Web developper , I&apos;ve done remote
           work for agencies , consulted for statups , and collaborate with
           talend people to create digital products for both business and
-          consumer use . I’m quietly confident , naturally curious , and
+          consumer use . I&apos;m quietly confident , naturally curious , and
           perpetually working on improving my chops and problem solving .
         </p>
         <p className=" max-[550px]:w-[21rem] w-[25rem]">

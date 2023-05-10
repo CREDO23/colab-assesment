@@ -1,4 +1,4 @@
-import Button from "@/components/Button";
+import Button from "@/components/shared/Button";
 import Image, { StaticImageData } from "next/image";
 
 export default function Card({
