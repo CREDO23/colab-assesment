@@ -10,10 +10,6 @@
  
 }
 
-/* *{
-  border: solid black 1px;
-} */
-
 @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 255, 255, 255;
@@ -78,16 +74,25 @@ body {
   border: 1px solid rgba(255, 255, 255, 0.18);
 }
 
+.glass-project {
+  background: rgba(255, 255, 255, 0.05);
+  box-shadow: 0 8px 32px 0 rgba(135, 107, 31, 0.11);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(1.5px);
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
 .glass-header{
   background: rgba(255, 255, 255, 0.05);
-  backdrop-filter: blur(3px);
+  backdrop-filter: blur(1.5px);
   -webkit-backdrop-filter: blur(4px);
   border-radius: 10px;
   border: 1px solid rgba(255, 255, 255, 0.18);
 }
 
 .glass-theme {
-  background: rgba(255, 255, 255, 0.658);
+  background: rgba(255, 255, 255, 0.458);
   backdrop-filter: blur(1.5px);
   -webkit-backdrop-filter: blur(1.5px);
   border-radius: 100%;

@@ -1,5 +1,7 @@
 import Button from "@/components/Button";
 
+import {} from "react-icons";
+
 export default function IntroduceUser(): JSX.Element {
   return (
     <div className="flex px-2 flex-col gap-2">
@@ -13,7 +15,7 @@ export default function IntroduceUser(): JSX.Element {
         <p className=" max-[550px]:w-[22rem] w-[25.5rem] text-lg font-light">
           I Design and code beautifully Web Application and I love what I do
         </p>
-        <Button islink link="#" label="Learn more" />
+        <Button link="#" label="Learn more" />
       </div>
     </div>
   );

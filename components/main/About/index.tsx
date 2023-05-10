@@ -72,8 +72,12 @@ export default function About(): JSX.Element {
         </p>
         <p className="w-[30rem] max-[550px]:w-[22rem] ">
           Feel free to connect if you&apos;d like, or you can contact me by
-          emailing me directly at <span className=" text-pink">bakeratheirry@gmail.com</span>.<br/>My open-source
-          projects : <a className=" text-pink" href="https://github.com/CREDO23">Github</a> 
+          emailing me directly at{" "}
+          <span className=" text-pink">bakeratheirry@gmail.com</span>.<br />
+          My open-source projects :{" "}
+          <a className=" text-pink" href="https://github.com/CREDO23">
+            Github
+          </a>
         </p>
       </div>
     </section>
