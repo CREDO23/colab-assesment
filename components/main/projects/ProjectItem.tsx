@@ -1,7 +1,7 @@
 import Button from "@/components/shared/Button";
-import Image, { StaticImageData } from "next/image";
+import Image from "next/image";
 
-export default function Card({
+export default function ProjectItem({
   title,
   description,
   image,

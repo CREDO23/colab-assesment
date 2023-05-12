@@ -3,7 +3,6 @@ import {
   AiFillGithub,
   AiFillTwitterSquare,
 } from "react-icons/ai";
-import { IconType } from "react-icons/lib";
 
 const socialmedias: IsocialmediaProps[] = [
   {

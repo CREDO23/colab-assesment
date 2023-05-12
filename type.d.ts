@@ -27,3 +27,23 @@ interface IsocialmediaProps {
   label: string;
   link: string;
 }
+
+interface InewProps {
+  source: {
+    name: string;
+    id?: string | NULL;
+  };
+  author?: string;
+  title?: string;
+  description: string;
+  url: string;
+  urlToImage: string;
+  publishedAt: string;
+  content?: string;
+}
+
+interface IapiResponse {
+  status: string;
+  totalResults: number;
+  articles: InewProps[];
+}

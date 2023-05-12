@@ -1,6 +1,9 @@
 export default function About(): JSX.Element {
   return (
-    <section className="w-full my-6 flex items-center flex-col gap-10">
+    <section
+      id="about-me"
+      className="w-full my-6 flex items-center flex-col gap-10"
+    >
       <h3 className=" text-2xl">About me</h3>
       <div className=" font-light flex flex-col gap-4 items-center justify-center text-center">
         <p className="w-[30rem] max-[550px]:w-[22rem] ">
@@ -37,7 +40,7 @@ export default function About(): JSX.Element {
             <li className=" flex flex-col items-center text-center text-pink">
               Backend
               <ul className="list-none p-1 flex flex-col items-center text-black font-light space-y-1">
-                <li className="border">NodeJs</li>
+                <li className="">NodeJs</li>
                 <li>ExpressJs</li>
               </ul>
             </li>

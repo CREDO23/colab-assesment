@@ -5,6 +5,7 @@ import { useState } from "react";
 import Home1 from "@/components/main/Home";
 import About from "@/components/main/About";
 import Projects from "@/components/main/projects";
+import News from "@/components/main/news";
 
 const poppins = Poppins({
   weight: ["100", "200", "300", "400", "500", "600", "700"],
@@ -15,7 +16,7 @@ export default function Home() {
   const [hamburger, setHamburger] = useState<boolean>(false);
 
   return (
-    <div className=" relative w-screen overflow-auto no-scrollbar h-screen bgmain">
+    <div className=" scroll-smooth relative w-screen overflow-auto no-scrollbar h-screen bgmain">
       <div className="bgcircle1 max-[500px]:-left-[20rem] absolute -top-[10rem] -left-[10rem] w-[40rem] h-[40rem] rounded-full"></div>
       <Header hamburger={hamburger} setHamburger={setHamburger} />
       <main
@@ -28,6 +29,7 @@ export default function Home() {
         <Home1 />
         <About />
         <Projects />
+        <News />
       </main>
       <Footer hamburger={hamburger} />
     </div>

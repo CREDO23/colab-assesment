@@ -8,7 +8,7 @@ export default function SocialMediaItem({
       <span className="text-yellow h-6 w-6 flex items-center justify-center">
         {icon}
       </span>
-      <p className=" font-light text-sm">{label}</p>
+      <p className=" hidden md:block font-light text-sm">{label}</p>
     </a>
   );
 }

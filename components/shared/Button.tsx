@@ -8,7 +8,7 @@ interface Iprops {
 
 export default function Button({ label, link, icon }: Iprops): JSX.Element {
   return (
-    <button className=" transition-all text-white bg-pink hover:bg-pink-20 w-28 h-10 px-4 rounded-3xl text-sm ">
+    <button className=" transition-all hover:shadow-lg text-white bg-pink hover:bg-pink-20 w-28 h-10 px-4 rounded-3xl text-sm ">
       {link ? <a href={link}>{label}</a> : <span>{label}</span>}
       {icon && icon}
     </button>

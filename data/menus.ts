@@ -2,22 +2,22 @@ const menus: InavigationMenu[] = [
   {
     index: 0,
     label: "Home",
-    link: "#",
+    link: "/",
   },
   {
     index: 1,
     label: "About me",
-    link: "#",
+    link: "#about-me",
   },
   {
     index: 2,
     label: "My projects",
-    link: "#",
+    link: "#projects",
   },
   {
     index: 3,
-    label: "Inspiration",
-    link: "#",
+    label: "News",
+    link: "#news",
   },
 ];
 
