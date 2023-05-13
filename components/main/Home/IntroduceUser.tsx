@@ -13,7 +13,7 @@ export default function IntroduceUser(): JSX.Element {
         <p className=" max-[550px]:w-[22rem] w-[25.5rem] text-lg font-light">
           I Design and code beautifully Web Application and I love what I do
         </p>
-        <Button link="#" label="Learn more" />
+        <Button link="#about-me" label="Learn more" />
       </div>
     </div>
   );

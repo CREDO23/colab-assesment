@@ -21,7 +21,7 @@ export default function Home() {
       <Header hamburger={hamburger} setHamburger={setHamburger} />
       <main
         className={`z-30  ${
-          hamburger ? "h-0" : "h-auto"
+          hamburger ? " max-[768px]:h-0" : "h-auto"
         } transition-all duration-500 w-full px-5  flex items-center flex-col overflow-auto no-scrollbar ${
           poppins.style
         }`}

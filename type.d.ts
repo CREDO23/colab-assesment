@@ -29,21 +29,20 @@ interface IsocialmediaProps {
 }
 
 interface InewProps {
-  source: {
-    name: string;
-    id?: string | NULL;
-  };
-  author?: string;
+  source: string;
   title?: string;
   description: string;
   url: string;
-  urlToImage: string;
-  publishedAt: string;
+  image_url: string;
+  published_at: string;
   content?: string;
 }
 
 interface IapiResponse {
-  status: string;
-  totalResults: number;
-  articles: InewProps[];
+  data: InewProps[];
+}
+
+interface InavigationProps {
+  setHamburger: Dispatch<SetStateAction<boolean>>;
+  hamburger: boolean;
 }

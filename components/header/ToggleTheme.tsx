@@ -1,4 +1,4 @@
-import React, { ReactNode, useState } from "react";
+import React, { useState } from "react";
 import { IoIosMoon } from "react-icons/io";
 import { WiDaySunny } from "react-icons/wi";
 

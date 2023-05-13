@@ -2,7 +2,7 @@ const menus: InavigationMenu[] = [
   {
     index: 0,
     label: "Home",
-    link: "/",
+    link: "#home",
   },
   {
     index: 1,

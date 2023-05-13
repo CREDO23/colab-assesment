@@ -2,20 +2,20 @@
 
 export default function NewItem({
   url,
-  urlToImage,
+  image_url,
   source,
   description,
-  publishedAt,
+  published_at,
 }: InewProps): JSX.Element {
   return (
-    <div className=" w-[18rem] transition-all border hover:shadow-md cursor-pointer relative bg-transparent flex flex-col gap-1 h-[22rem] rounded-md">
+    <div className=" w-[18rem] max-[500px]:w-80 transition-all border hover:shadow-md cursor-pointer relative bg-transparent flex flex-col gap-1 h-[22rem] rounded-md">
       <div className="w-full flex items-center justify-center rounded-md">
-        <img className="rounded-t-md h-40" src={urlToImage} alt="" />
+        <img className="rounded-t-md w-full h-40" src={image_url} alt="" />
       </div>
       <div className="px-4  h-24 z-20 bg-transparent gap-2 my-3 flex flex-col">
         <div className="flex flex-col">
           <span className="text-slate-400 text-xs font-light">Source:</span>
-          <p className="text-pink text-sm font-normal">{source?.name}</p>
+          <p className="text-pink text-sm font-normal">{source}</p>
         </div>
         <p className="h-16  z-20  font-light text-sm">
           {description?.length > 100
@@ -29,7 +29,7 @@ export default function NewItem({
             Published at:
           </span>
           <span className=" text-slate-500 text-sm font-light">
-            {new Date(publishedAt).toLocaleDateString("en-US", {
+            {new Date(published_at).toLocaleDateString("en-US", {
               weekday: "short",
               year: "numeric",
               month: "long",

@@ -8,7 +8,7 @@ export default function ProjectItem({
   link,
 }: IprojectCard): JSX.Element {
   return (
-    <div className=" w-[18rem] flex flex-col justify-center gap-4 p-4 h-[24rem] glass-project">
+    <div className="max-[500px]:w-80 w-[18rem] flex flex-col justify-center gap-4 p-4 h-[24rem] glass-project">
       <h4 className="">{title}</h4>
       <div className="flex gap-2 flex-col ">
         <Image className="h-44 rounded-2xl" src={image} alt="chataw" />

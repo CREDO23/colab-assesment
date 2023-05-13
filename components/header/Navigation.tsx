@@ -1,7 +1,10 @@
 import { useState } from "react";
 import menus from "../../data/menus";
 
-export default function Navigation(): JSX.Element {
+export default function Navigation({
+  setHamburger,
+  hamburger,
+}: InavigationProps): JSX.Element {
   const [selected, setSelected] = useState<number>(0);
 
   return (
@@ -10,7 +13,10 @@ export default function Navigation(): JSX.Element {
         {menus.map((item: InavigationMenu, key) => (
           <li
             key={key}
-            onClick={() => setSelected(item.index)}
+            onClick={() => {
+              setSelected(item.index);
+              setHamburger(!hamburger);
+            }}
             className={` nav-item ${
               item.index == selected
                 ? "after:duration-300 after:transition-all after:bg-transparent after:absolute after:-bottom-3 after:left-0 after:bg-gradient-to-l from-slate-200 via-orange-300 to-slate-200 after:h-[1px] after:w-full"

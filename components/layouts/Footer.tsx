@@ -8,7 +8,7 @@ export default function Footer({ hamburger }: IhamburgerProps): JSX.Element {
     <footer
       className={` ${
         hamburger ? "hidden" : ""
-      } bg-white z-20 max-[770px]:p-4 w-full p-8`}
+      } bg-white z-20 text-black max-[770px]:p-4 w-full p-8`}
     >
       <div className="flex items-center flex-col">
         <div className="flex w-full  items-center max-[770px]:flex-col max-[770px]:gap-10 justify-between">
@@ -41,7 +41,7 @@ export default function Footer({ hamburger }: IhamburgerProps): JSX.Element {
         <hr className="my-8 w-11/12" />
         <span className="block  font-light text-sm text-center">
           © 2023{" "}
-          <a href="#" className="hover:underline">
+          <a href="#home" className="hover:underline">
             Thierry
           </a>
           . All Rights Reserved.

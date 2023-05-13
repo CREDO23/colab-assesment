@@ -26,7 +26,7 @@ export default function About(): JSX.Element {
       </div>
       <div className=" max-[640px]:flex-col flex  max-[640px]:items-center items-start  justify-center gap-8">
         <div className="flex p-1  flex-col items-center  text-center justify-center gap-4">
-          <h2>Programing languages</h2>
+          <h2 className=" underline">Programing languages</h2>
           <ul className="max-w-md space-y-1 font-light">
             <li>C</li>
             <li>Javascript</li>
@@ -34,19 +34,19 @@ export default function About(): JSX.Element {
           </ul>
         </div>
         <div className="flex p-1 flex-col items-center text-center justify-center gap-4">
-          <h2>Skills</h2>
+          <h2 className=" underline">Skills</h2>
 
-          <ol className="space-y-4 text-center list-none text-gray-500  list-insid">
-            <li className=" flex flex-col items-center text-center text-pink">
-              Backend
-              <ul className="list-none p-1 flex flex-col items-center text-black font-light space-y-1">
+          <ol className="space-y-4 text-center list-none  list-insid">
+            <li className=" flex flex-col items-center text-center">
+              <span className=" text-pink">Backend</span>
+              <ul className="list-none p-1 flex flex-col items-center  font-light space-y-1">
                 <li className="">NodeJs</li>
                 <li>ExpressJs</li>
               </ul>
             </li>
-            <li className=" text-pink">
-              Frontend
-              <ul className=" text-black font-light space-y-1">
+            <li>
+              <span className=" text-pink">Frontend</span>
+              <ul className="  font-light space-y-1">
                 <li>HTML && CSS / Sass</li>
                 <li>NextJs</li>
                 <li>ReactJs</li>
@@ -55,9 +55,9 @@ export default function About(): JSX.Element {
                 <li>Redux & Toolkit / Recoil</li>
               </ul>
             </li>
-            <li className=" text-pink">
-              Database and ORM
-              <ul className=" text-black font-light space-y-1">
+            <li>
+              <span className=" text-pink">Database and ORM</span>
+              <ul className="  font-light space-y-1">
                 <li>MongoDB / Mongoose</li>
                 <li>PostgreSQL / Sequelize</li>
                 <li>SQLite3</li>
@@ -66,7 +66,7 @@ export default function About(): JSX.Element {
           </ol>
         </div>
         <div className="flex p-1 items-center flex-col text-center justify-center gap-4">
-          <h2>Tools</h2>
+          <h2 className=" underline">Tools</h2>
           <ul className="max-w-md space-y-1 font-light">
             <li>Git & Github</li>
             <li>Docker</li>
